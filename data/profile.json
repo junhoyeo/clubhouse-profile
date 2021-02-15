@@ -1,0 +1,180 @@
+{
+  "user_id": 4075733,
+  "name": "Junho Yeo",
+  "displayname": null,
+  "photo_url": "https://clubhouseprod.s3.amazonaws.com:443/4075733_07bebe3c-21b8-4df3-b09b-6a83176d89da",
+  "username": "junhoyeo",
+  "bio": "⛳️ Software Engineer at @Approach\n🌸 Creating INEVITABLE™ Services\n\n🏴‍☠️ Have a lot of interest in interesting hacks and projects with funny ideas\n\n🙋🏻‍♂️ Someone who can start something right away, when they have an inspiration\n\n🙌 I speak 🇰🇷🇺🇸, like to 🏃🏙 while 🎧🎼\n👻 Dropout of Korea Digital Media High",
+  "twitter": null,
+  "instagram": "_junhoyeo",
+  "num_followers": 153,
+  "num_following": 130,
+  "time_created": "2021-01-28T12:30:25.625451+00:00",
+  "follows_me": false,
+  "is_blocked_by_network": false,
+  "mutual_follows_count": 0,
+  "mutual_follows": [],
+  "notification_type": null,
+  "invited_by_user_profile": {
+    "user_id": 4061302,
+    "name": "Sunghyun Cho",
+    "photo_url": "https://clubhouseprod.s3.amazonaws.com:443/4061302_12cbc590-980f-4536-9d9e-6b521a18fa32_thumbnail_250x250",
+    "username": "anaclumos"
+  },
+  "clubs": [
+    {
+      "club_id": 8913,
+      "name": "What it takes to run a 1 Million Dollar Biz",
+      "description": "Our “Why” is to Inspire 100M Entrepreneurs in the world. Come join our Positive Tribe 🏠.                          Our Mission is to provide as much value as we can. We are the World Record Longest Room in CH History. If you own a 7 Fig Biz and  want to be part of the Mod Team 💌 hello@katehancock.com follow @katehancock The Pivot Queen Please no pitching.                                          Fun Facts 🎤 🎖Grant Cardone Closed a Movie Deal Live in this room. Daymond John From Shark Tank said it’s his Favorite room 😍. We started our marathon on December 25,2020 👀. We pioneered the Q And A format in Entrepreneurship Category.                    Join our dedicated Facebook group for the Club to Collaborate and Network.\n➡️  bit.ly/MillionDollarBizGroup ⬅️  🚌",
+      "photo_url": "https://clubhouseprod.s3.amazonaws.com:443/club_8913_9ab44270-a07a-481e-a1c3-5bb5150f1c5c_thumbnail_250x250",
+      "num_members": 11188,
+      "num_followers": 9213,
+      "enable_private": true,
+      "is_follow_allowed": true,
+      "is_membership_private": false,
+      "is_community": true,
+      "rules": [
+        {
+          "desc": "We’re all in this together to create a welcoming environment. Let’s treat everyone with respect. Healthy debates are natural, but kindness is required",
+          "title": "Be Kind and Courteous"
+        },
+        {
+          "desc": "Make sure everyone feels safe. Bullying of any kind isn’t allowed and degrading comments about things like race, religion, culture, sexual orientation, gender or identity will not be tolerated.",
+          "title": "No hate speech or Bullying"
+        },
+        {
+          "desc": "@katehancock @danielrobbins Please nominate 10 people that you will think will find value with our daily discussions. ",
+          "title": "Follow the Club Founders"
+        }
+      ],
+      "num_online": 0
+    }
+  ],
+  "has_verified_email": true,
+  "can_edit_username": true,
+  "can_edit_name": true,
+  "can_edit_displayname": true,
+  "topics": [
+    { "title": "🦄 Startups", "id": 107, "abbreviated_title": "Startups" },
+    {
+      "title": "💰 Venture Capital",
+      "id": 108,
+      "abbreviated_title": "Venture Capital"
+    },
+    {
+      "title": "💵 Angel Investing",
+      "id": 109,
+      "abbreviated_title": "Angel Investing"
+    },
+    { "title": "📱 Product", "id": 110, "abbreviated_title": "Product" },
+    {
+      "title": "🍕 Engineering",
+      "id": 111,
+      "abbreviated_title": "Engineering"
+    },
+    { "title": "📈 Marketing", "id": 112, "abbreviated_title": "Marketing" },
+    { "title": "🛍 DTC", "id": 113, "abbreviated_title": "DTC" },
+    { "title": "🥽 VR/AR", "id": 114, "abbreviated_title": "VR/AR" },
+    { "title": "🐇 Crypto", "id": 115, "abbreviated_title": "Crypto" },
+    { "title": "☁️ SaaS", "id": 116, "abbreviated_title": "SaaS" },
+    { "title": "🧠 AI", "id": 117, "abbreviated_title": "AI" },
+    { "title": "🔬 Science", "id": 131, "abbreviated_title": "Science" },
+    { "title": "🧲 Physics", "id": 132, "abbreviated_title": "Physics" },
+    { "title": "🧬 Biology", "id": 135, "abbreviated_title": "Biology" },
+    {
+      "title": "🇺🇸 U.S. Politics",
+      "id": 43,
+      "abbreviated_title": "U.S. Politics"
+    },
+    {
+      "title": "👥 Social Issues",
+      "id": 48,
+      "abbreviated_title": "Social Issues"
+    },
+    {
+      "title": "📰 Current Events",
+      "id": 49,
+      "abbreviated_title": "Current Events"
+    },
+    {
+      "title": "📐 Architecture",
+      "id": 50,
+      "abbreviated_title": "Architecture"
+    },
+    { "title": "📖 Writing", "id": 53, "abbreviated_title": "Writing" },
+    { "title": "🎏 Design", "id": 56, "abbreviated_title": "Design" },
+    {
+      "title": "🍣 Food & Drink",
+      "id": 58,
+      "abbreviated_title": "Food & Drink"
+    },
+    { "title": "📚 Books", "id": 59, "abbreviated_title": "Books" },
+    { "title": "⛳️ Golf", "id": 72, "abbreviated_title": "Golf" },
+    { "title": "🎧 Music", "id": 74, "abbreviated_title": "Music" },
+    { "title": "🎞 Movies", "id": 75, "abbreviated_title": "Movies" },
+    { "title": "📻 Podcasts", "id": 78, "abbreviated_title": "Podcasts" },
+    { "title": "🕹 Gaming", "id": 79, "abbreviated_title": "Gaming" },
+    { "title": "⏳ The Future", "id": 140, "abbreviated_title": "The Future" },
+    { "title": "🌱 Networking", "id": 147, "abbreviated_title": "Networking" },
+    {
+      "title": "🎯 Pitch Practice",
+      "id": 148,
+      "abbreviated_title": "Pitch Practice"
+    },
+    {
+      "title": "📎 Small Business",
+      "id": 149,
+      "abbreviated_title": "Small Business"
+    },
+    {
+      "title": "🍓 Psychedelics",
+      "id": 17,
+      "abbreviated_title": "Psychedelics"
+    },
+    { "title": "🍃 Mindfulness", "id": 18, "abbreviated_title": "Mindfulness" },
+    { "title": "🧘🏻‍♀️ Meditation", "id": 19, "abbreviated_title": "Meditation" },
+    { "title": "💸 Grownuping", "id": 30, "abbreviated_title": "Grownuping" },
+    { "title": "✈️ Traveling", "id": 31, "abbreviated_title": "Traveling" },
+    { "title": "🙊 Comedy", "id": 76, "abbreviated_title": "Comedy" },
+    { "title": "☕️ Advice", "id": 82, "abbreviated_title": "Advice" },
+    {
+      "title": "🎙 Storytelling",
+      "id": 87,
+      "abbreviated_title": "Storytelling"
+    },
+    { "title": "💥 Fun", "id": 88, "abbreviated_title": "Fun" },
+    {
+      "title": "🌁 San Francisco",
+      "id": 90,
+      "abbreviated_title": "San Francisco"
+    },
+    { "title": "🗽 New York", "id": 91, "abbreviated_title": "New York" },
+    { "title": "🇫🇷 Paris", "id": 93, "abbreviated_title": "Paris" },
+    { "title": "🌅 Los Angeles", "id": 94, "abbreviated_title": "Los Angeles" },
+    { "title": "😴 Gen Z", "id": 126, "abbreviated_title": "Gen Z" },
+    {
+      "title": "👻 Millennials",
+      "id": 127,
+      "abbreviated_title": "Millennials"
+    },
+    {
+      "title": "🏹 Entrepreneurship",
+      "id": 144,
+      "abbreviated_title": "Entrepreneurship"
+    },
+    { "title": "🏛 Stocks", "id": 145, "abbreviated_title": "Stocks" },
+    { "title": "🌙 Late Night", "id": 151, "abbreviated_title": "Late Night" },
+    {
+      "title": "✨ Meet People",
+      "id": 153,
+      "abbreviated_title": "Meet People"
+    },
+    { "title": "👩🏽‍💻 Coworking", "id": 154, "abbreviated_title": "Coworking" },
+    {
+      "title": "🧊 Chill Vibes",
+      "id": 156,
+      "abbreviated_title": "Chill Vibes"
+    },
+    { "title": "🦙 ¯\\_(ツ)_/¯", "id": 157, "abbreviated_title": "¯\\_(ツ)_/¯" }
+  ]
+}
