@@ -10,6 +10,7 @@
   "dependencies": {
     "date-fns": "^2.16.1",
     "map-obj": "^4.1.0",
+    "moment": "^2.29.1",
     "next": "10.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1",

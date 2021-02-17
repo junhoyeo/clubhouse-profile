@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 import styled from 'styled-components';
 
 import profile from '../data/profile.json';
@@ -6,6 +7,9 @@ import profile from '../data/profile.json';
 import ServiceWrapper from '../components/ServiceWrapper';
 
 const Home = () => {
+  const formattedJoinedDate = moment(new Date(profile.time_created)) //
+    .format('MMM DD, yyyy');
+
   return (
     <ServiceWrapper>
       <Wrapper>
@@ -30,7 +34,7 @@ const Home = () => {
         <NorminationContainer>
           <NorminationProfile src={profile.invited_by_user_profile.photo_url} />
           <NorminationInformation>
-            <JoinedAt>{`Joined ${profile.time_created}`}</JoinedAt>
+            <JoinedAt>{`Joined ${formattedJoinedDate}`}</JoinedAt>
             <NorminationText>
               Norminated by{' '}
               <Norminator>{profile.invited_by_user_profile.name}</Norminator>
