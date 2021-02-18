@@ -9,11 +9,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    background-color: #eeecdd;
+    background-color: #edeade;
   }
 
   body {
     margin: 0;
+    color: #262626;
     font-family: 'Nunito', sans-serif;
   }
 

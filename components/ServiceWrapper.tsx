@@ -4,8 +4,8 @@ import MobileSizedView from 'react-mobile-sized-view';
 const ServiceWrapper: React.FC = ({ children }) => {
   return (
     <MobileSizedView
-      backgroundColor="#eeecdd"
-      screenBackgroundColor="#eeecdd"
+      backgroundColor="#edeade"
+      screenBackgroundColor="#edeade"
       screenLightShadow="none"
       screenDarkShadow="none"
     >
