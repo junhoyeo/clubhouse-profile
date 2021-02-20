@@ -1,14 +1,26 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 
-const Message = () => {
+interface MessageProps {
+  isMessageShown: boolean;
+  onClickLater: () => void;
+  onClickOkay: () => void;
+}
+
+const Message: React.FC<MessageProps> = ({
+  isMessageShown,
+  onClickLater,
+  onClickOkay,
+}) => {
   return (
     <Wrapper>
       <Container>
         <Title>👋 Junho Yeo invited you to view his GitHub profile</Title>
         <ButtonList>
-          <Button>Maybe later?</Button>
-          <Button primary>Join his followers</Button>
+          <Button onClick={onClickLater}>Maybe later?</Button>
+          <Button primary onClick={onClickOkay}>
+            Join his followers
+          </Button>
         </ButtonList>
       </Container>
     </Wrapper>
@@ -17,6 +29,17 @@ const Message = () => {
 
 export default Message;
 
+const appearAnimation = keyframes`
+  0% {
+    opacity: 0.8;
+    transform: translateY(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+`;
+
 const Wrapper = styled.div`
   background-color: #00a646;
   position: fixed;
@@ -24,6 +47,7 @@ const Wrapper = styled.div`
   left: 0;
   right: 0;
   display: flex;
+  animation: ${appearAnimation} 0.5s linear;
 `;
 
 const Container = styled.div`

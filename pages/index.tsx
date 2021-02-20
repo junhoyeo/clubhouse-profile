@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import moment from 'moment';
 import styled from 'styled-components';
 
@@ -8,6 +8,8 @@ import Message from '../components/Message';
 import ServiceWrapper from '../components/ServiceWrapper';
 
 const Home = () => {
+  const [isMessageShown, setMessageShown] = useState<boolean>(true);
+
   const formattedJoinedDate = moment(new Date(profile.time_created)) //
     .format('MMM DD, yyyy');
 
@@ -53,7 +55,18 @@ const Home = () => {
           </NorminationInformation>
         </NorminationContainer>
       </Wrapper>
-      <Message />
+      <Message
+        isMessageShown={isMessageShown}
+        onClickLater={() => setMessageShown(false)}
+        onClickOkay={() => {
+          const newWindow = window.open(
+            'https://github.com/junhoyeo',
+            '_blank',
+          );
+          newWindow.focus();
+          setMessageShown(false);
+        }}
+      />
     </ServiceWrapper>
   );
 };
