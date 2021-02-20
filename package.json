@@ -8,7 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "date-fns": "^2.16.1",
+    "dotenv": "^8.2.0",
     "ismobilejs": "^1.1.1",
     "map-obj": "^4.1.0",
     "moment": "^2.29.1",
