@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import profile from '../data/profile.json';
 
+import Message from '../components/Message';
 import ServiceWrapper from '../components/ServiceWrapper';
 
 const Home = () => {
@@ -52,6 +53,7 @@ const Home = () => {
           </NorminationInformation>
         </NorminationContainer>
       </Wrapper>
+      <Message />
     </ServiceWrapper>
   );
 };

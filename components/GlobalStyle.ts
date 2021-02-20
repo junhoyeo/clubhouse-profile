@@ -8,6 +8,14 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  button {
+    border: 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
   html {
     background-color: #edeade;
   }
