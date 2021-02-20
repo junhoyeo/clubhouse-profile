@@ -28,8 +28,18 @@ const Home = () => {
         </FollowRow>
         <Bio>{profile.bio}</Bio>
         <SocialRow>
-          <Instagram>{profile.instagram}</Instagram>
-          <Twitter>{profile.twitter}</Twitter>
+          {profile.instagram && (
+            <Social>
+              <InstagramLogo />
+              <span>{profile.instagram}</span>
+            </Social>
+          )}
+          {profile.twitter && (
+            <Social>
+              <TwitterLogo />
+              <span>{profile.twitter}</span>
+            </Social>
+          )}
         </SocialRow>
         <NorminationContainer>
           <NorminationProfile src={profile.invited_by_user_profile.photo_url} />
@@ -99,11 +109,38 @@ const Bio = styled.p`
   line-height: 1.45;
 `;
 
-const SocialRow = styled.div``;
+const SocialRow = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
-const Instagram = styled.span``;
+const Social = styled.span`
+  display: flex;
+  align-items: center;
 
-const Twitter = styled(Instagram)``;
+  span {
+    font-size: 0.95rem;
+    line-height: 1;
+    margin-left: 4px;
+  }
+
+  &:first-child {
+    margin-right: 16px;
+  }
+`;
+
+const SocialLogo = styled.img`
+  width: 16px;
+  height: 16px;
+`;
+
+const InstagramLogo = styled(SocialLogo).attrs({
+  src: 'images/instagram.svg',
+})``;
+
+const TwitterLogo = styled(SocialLogo).attrs({
+  src: 'images/twitter.svg',
+})``;
 
 const NorminationContainer = styled.div`
   margin-top: 45px;

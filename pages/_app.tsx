@@ -3,16 +3,18 @@ import React from 'react';
 
 import GlobalStyle from '../components/GlobalStyle';
 
+import profile from '../data/profile.json';
+
 function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Junho's Clubhouse</title>
-        <meta property="og:title" content="Junho's Clubhouse" />
+        <title>{profile.name}'s Clubhouse</title>
+        <meta property="og:title" content={`${profile.name}'s Clubhouse`} />
         <meta property="og:url" content="https://clubhouse.junho.io/" />
         <meta
           property="og:description"
-          content="Come over to Junho's Clubhouse"
+          content={`Come over to ${profile.name}'s Clubhouse`}
         />
         <meta property="og:image" content="/og-image.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
