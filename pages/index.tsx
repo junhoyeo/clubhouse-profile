@@ -6,6 +6,8 @@ import profile from '../data/profile.json';
 
 import Message, { MessageProps } from '../components/Message';
 import ServiceWrapper from '../components/ServiceWrapper';
+import { avatarTouchMessage } from '../utils/avatarTouchMessage';
+import { openURL } from '../utils/openURL';
 
 interface Social {
   name: string;
@@ -18,6 +20,7 @@ const Home = () => {
   const [message, setMessage] = useState<MessageProps>({
     title: '',
   });
+  const [avatarTouchCount, setAvatarTouchCount] = useState<number>(0);
 
   const formattedJoinedDate = moment(new Date(profile.time_created)) //
     .format('MMM DD, yyyy');
@@ -27,13 +30,31 @@ const Home = () => {
       title: '👋 Junho Yeo invited you to view his GitHub profile',
       onClickLater: () => setMessageShown(false),
       onClickOkay: () => {
-        const newWindow = window.open('https://github.com/junhoyeo', '_blank');
-        newWindow.focus();
+        openURL('https://github.com/junhoyeo');
         setMessageShown(false);
       },
     });
     setMessageShown(true);
   }, []);
+
+  const onClickAvatar = () => {
+    if (isMessageShown) {
+      return;
+    }
+    setMessageShown(false);
+    setMessage({
+      title: avatarTouchMessage(avatarTouchCount),
+      error: true,
+    });
+    setAvatarTouchCount(avatarTouchCount + 1);
+    setMessageShown(true);
+    setTimeout(() => {
+      if (avatarTouchCount >= 10) {
+        openURL('https://github.com/junhoyeo/clubhouse-profile');
+      }
+      setMessageShown(false);
+    }, 2500);
+  };
 
   const onClickSocial = ({ name, url, key }: Social) => {
     if (isMessageShown) {
@@ -45,8 +66,7 @@ const Home = () => {
     });
     setMessageShown(true);
     setTimeout(() => {
-      const newWindow = window.open(`${url}/${profile[key]}`, '_blank');
-      newWindow.focus();
+      openURL(`${url}/${profile[key]}`);
       setMessageShown(false);
     }, 2500);
   };
@@ -68,7 +88,7 @@ const Home = () => {
   return (
     <ServiceWrapper>
       <Wrapper>
-        <Avatar src={profile.photo_url} />
+        <Avatar src={profile.photo_url} onClick={onClickAvatar} />
         <Name>{profile.name}</Name>
         <Username>{`@${profile.username}`}</Username>
         <FollowRow>
@@ -124,6 +144,7 @@ const Avatar = styled.img`
   width: 80px;
   height: 80px;
   border-radius: 36px;
+  cursor: pointer;
 `;
 
 const Name = styled.h1`

@@ -1,26 +1,36 @@
 import React from 'react';
 import styled, { css, keyframes } from 'styled-components';
 
-export interface MessageProps {
+export type MessageProps = {
   title: string;
   isMessageShown?: boolean;
-  onClickLater?: () => void;
-  onClickOkay?: () => void;
-}
+} & (
+  | {
+      onClickLater?: () => void;
+      onClickOkay?: () => void;
+    }
+  | { error: true }
+);
 
-const Message: React.FC<MessageProps> = ({
+type UnionKeys<T> = T extends any ? keyof T : undefined;
+type StrictUnionHelper<T, TAll> = T extends any
+  ? T & Partial<Record<Exclude<UnionKeys<TAll>, keyof T>, undefined>>
+  : undefined;
+type StrictUnion<T> = StrictUnionHelper<T, T>;
+
+const Message: React.FC<StrictUnion<MessageProps>> = ({
   title,
   isMessageShown,
+  error,
   onClickLater,
   onClickOkay,
 }) => {
-  // useEffect(() => {}, [isMessageShown])
   if (!isMessageShown) {
     return null;
   }
 
   return (
-    <Wrapper>
+    <Wrapper error={error}>
       <Container>
         <Title>{title}</Title>
         {!!onClickOkay && (
@@ -49,7 +59,11 @@ const appearAnimation = keyframes`
   }
 `;
 
-const Wrapper = styled.div`
+interface MessageWrapperProps {
+  error?: boolean;
+}
+
+const Wrapper = styled.div<MessageWrapperProps>`
   background-color: #00a646;
   position: fixed;
   top: 0;
@@ -57,6 +71,12 @@ const Wrapper = styled.div`
   right: 0;
   display: flex;
   animation: ${appearAnimation} 0.5s linear;
+
+  ${({ error }) =>
+    error &&
+    css`
+      background-color: #e33f45;
+    `};
 `;
 
 const Container = styled.div`
