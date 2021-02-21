@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "update": "node ./scripts/update.js"
   },
   "dependencies": {
     "axios": "^0.21.1",

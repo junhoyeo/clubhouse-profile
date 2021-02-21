@@ -1,0 +1,36 @@
+name: Update
+on:
+  schedule:
+    # update every monday, 00:00 -> 09:00 (GMT+9)
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Install
+        run: yarn install --frozen-lockfile
+
+      - name: Update
+        run: yarn update
+        env:
+          UUID: ${{ secrets.UUID }}
+          USER_ID: ${{ secrets.USER_ID }}
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+
+      - name: Set date in environment variable
+        run: echo "DATE=$(date +'%Y-%m-%dT%H:%M:%SZ')" >> $GITHUB_ENV
+
+      - name: Commit & Push changes
+        uses: Andro999b/push@patch-1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+          message: >
+            🎉 update: ${{ env.DATE }}
