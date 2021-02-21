@@ -1,27 +1,36 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled, { css, keyframes } from 'styled-components';
 
 interface MessageProps {
-  isMessageShown: boolean;
-  onClickLater: () => void;
-  onClickOkay: () => void;
+  title: string;
+  isMessageShown?: boolean;
+  onClickLater?: () => void;
+  onClickOkay?: () => void;
 }
 
 const Message: React.FC<MessageProps> = ({
+  title,
   isMessageShown,
   onClickLater,
   onClickOkay,
 }) => {
+  // useEffect(() => {}, [isMessageShown])
+  if (!isMessageShown) {
+    return null;
+  }
+
   return (
     <Wrapper>
       <Container>
-        <Title>👋 Junho Yeo invited you to view his GitHub profile</Title>
-        <ButtonList>
-          <Button onClick={onClickLater}>Maybe later?</Button>
-          <Button primary onClick={onClickOkay}>
-            Join his followers
-          </Button>
-        </ButtonList>
+        <Title>{title}</Title>
+        {!!onClickOkay && (
+          <ButtonList>
+            <Button onClick={onClickLater}>Maybe later?</Button>
+            <Button primary onClick={onClickOkay}>
+              Join his followers
+            </Button>
+          </ButtonList>
+        )}
       </Container>
     </Wrapper>
   );

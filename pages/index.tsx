@@ -8,10 +8,32 @@ import Message from '../components/Message';
 import ServiceWrapper from '../components/ServiceWrapper';
 
 const Home = () => {
-  const [isMessageShown, setMessageShown] = useState<boolean>(true);
+  const [isGitHubMessageShown, setGitHubMessageShown] = useState<boolean>(true);
+  const [isInstagramMessageShown, setInstagramMessageShown] = useState<boolean>(
+    false,
+  );
 
   const formattedJoinedDate = moment(new Date(profile.time_created)) //
     .format('MMM DD, yyyy');
+
+  const onClickInstagram = () => {
+    if (isInstagramMessageShown) {
+      return;
+    }
+    setGitHubMessageShown(false);
+    setInstagramMessageShown(true);
+    setTimeout(() => {
+      setInstagramMessageShown(false);
+      const newWindow = window.open(
+        'https://instagram.com/_junhoyeo',
+        '_blank',
+      );
+      newWindow.focus();
+      setGitHubMessageShown(false);
+    }, 2500);
+  };
+
+  const onClickTwitter = () => {};
 
   return (
     <ServiceWrapper>
@@ -32,13 +54,13 @@ const Home = () => {
         <Bio>{profile.bio}</Bio>
         <SocialRow>
           {profile.instagram && (
-            <Social>
+            <Social onClick={onClickInstagram}>
               <InstagramLogo />
               <span>{profile.instagram}</span>
             </Social>
           )}
           {profile.twitter && (
-            <Social>
+            <Social onClick={onClickTwitter}>
               <TwitterLogo />
               <span>{profile.twitter}</span>
             </Social>
@@ -56,16 +78,21 @@ const Home = () => {
         </NorminationContainer>
       </Wrapper>
       <Message
-        isMessageShown={isMessageShown}
-        onClickLater={() => setMessageShown(false)}
+        title="👋 Junho Yeo invited you to view his GitHub profile"
+        isMessageShown={isGitHubMessageShown}
+        onClickLater={() => setGitHubMessageShown(false)}
         onClickOkay={() => {
           const newWindow = window.open(
             'https://github.com/junhoyeo',
             '_blank',
           );
           newWindow.focus();
-          setMessageShown(false);
+          setGitHubMessageShown(false);
         }}
+      />
+      <Message
+        title="👋 Thanks for clicking my Instagram!"
+        isMessageShown={isInstagramMessageShown}
       />
     </ServiceWrapper>
   );
@@ -132,6 +159,7 @@ const SocialRow = styled.div`
 const Social = styled.span`
   display: flex;
   align-items: center;
+  cursor: pointer;
 
   span {
     font-size: 0.95rem;
