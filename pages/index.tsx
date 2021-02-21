@@ -102,10 +102,12 @@ const Home = () => {
     }
 
     copyToClipboard(profile.username);
-    setMessage({
-      title: '✅ Copied my username to your clipboard!',
-    });
-    setMessageShown(true);
+    setTimeout(() => {
+      setMessage({
+        title: '✅ Copied my username to your clipboard!',
+      });
+      setMessageShown(true);
+    }, 100);
     setTimeout(() => {
       window.location.href = 'clubhouse://';
     }, 500);
