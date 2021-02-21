@@ -101,30 +101,14 @@ const Home = () => {
       return;
     }
 
-    const script = document.createElement('script');
-
-    script.onload = () => {
-      copyToClipboard(profile.username);
-      setMessage({
-        title: '✅ Copied my username to your clipboard!',
-      });
-      setMessageShown(true);
-      setInterval(() => {
-        document.location.href = 'clubhouse://';
-      }, 500);
-    };
-    script.onerror = () => {
-      setMessageShown(false);
-      setMessage({
-        title: '😰 Failed to open Clubhouse app',
-        error: true,
-      });
-      setMessageShown(true);
-      setTimeout(() => setMessageShown(false), 2500);
-    };
-    script.setAttribute('src', 'clubhouse://');
-
-    document.getElementsByTagName('head')[0].appendChild(script);
+    copyToClipboard(profile.username);
+    setMessage({
+      title: '✅ Copied my username to your clipboard!',
+    });
+    setMessageShown(true);
+    setTimeout(() => {
+      window.location.href = 'clubhouse://';
+    }, 500);
   };
 
   return (
