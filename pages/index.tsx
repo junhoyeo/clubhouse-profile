@@ -1,39 +1,69 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import moment from 'moment';
 import styled from 'styled-components';
 
 import profile from '../data/profile.json';
 
-import Message from '../components/Message';
+import Message, { MessageProps } from '../components/Message';
 import ServiceWrapper from '../components/ServiceWrapper';
 
+interface Social {
+  name: string;
+  url: string;
+  key: 'instagram' | 'twitter';
+}
+
 const Home = () => {
-  const [isGitHubMessageShown, setGitHubMessageShown] = useState<boolean>(true);
-  const [isInstagramMessageShown, setInstagramMessageShown] = useState<boolean>(
-    false,
-  );
+  const [isMessageShown, setMessageShown] = useState<boolean>(false);
+  const [message, setMessage] = useState<MessageProps>({
+    title: '',
+  });
 
   const formattedJoinedDate = moment(new Date(profile.time_created)) //
     .format('MMM DD, yyyy');
 
-  const onClickInstagram = () => {
-    if (isInstagramMessageShown) {
+  useEffect(() => {
+    setMessage({
+      title: '👋 Junho Yeo invited you to view his GitHub profile',
+      onClickLater: () => setMessageShown(false),
+      onClickOkay: () => {
+        const newWindow = window.open('https://github.com/junhoyeo', '_blank');
+        newWindow.focus();
+        setMessageShown(false);
+      },
+    });
+    setMessageShown(true);
+  }, []);
+
+  const onClickSocial = ({ name, url, key }: Social) => {
+    if (isMessageShown) {
       return;
     }
-    setGitHubMessageShown(false);
-    setInstagramMessageShown(true);
+    setMessageShown(false);
+    setMessage({
+      title: `👋 Thanks for clicking my ${name}!`,
+    });
+    setMessageShown(true);
     setTimeout(() => {
-      setInstagramMessageShown(false);
-      const newWindow = window.open(
-        'https://instagram.com/_junhoyeo',
-        '_blank',
-      );
+      const newWindow = window.open(`${url}/${profile[key]}`, '_blank');
       newWindow.focus();
-      setGitHubMessageShown(false);
+      setMessageShown(false);
     }, 2500);
   };
 
-  const onClickTwitter = () => {};
+  const onClickInstagram = () =>
+    onClickSocial({
+      name: 'Instagram',
+      url: 'https://instagram.com',
+      key: 'instagram',
+    });
+
+  const onClickTwitter = () =>
+    onClickSocial({
+      name: 'Twitter',
+      url: 'https://twitter.com',
+      key: 'twitter',
+    });
 
   return (
     <ServiceWrapper>
@@ -77,23 +107,7 @@ const Home = () => {
           </NorminationInformation>
         </NorminationContainer>
       </Wrapper>
-      <Message
-        title="👋 Junho Yeo invited you to view his GitHub profile"
-        isMessageShown={isGitHubMessageShown}
-        onClickLater={() => setGitHubMessageShown(false)}
-        onClickOkay={() => {
-          const newWindow = window.open(
-            'https://github.com/junhoyeo',
-            '_blank',
-          );
-          newWindow.focus();
-          setGitHubMessageShown(false);
-        }}
-      />
-      <Message
-        title="👋 Thanks for clicking my Instagram!"
-        isMessageShown={isInstagramMessageShown}
-      />
+      <Message isMessageShown={isMessageShown} {...message} />
     </ServiceWrapper>
   );
 };

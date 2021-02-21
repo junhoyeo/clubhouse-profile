@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled, { css, keyframes } from 'styled-components';
 
-interface MessageProps {
+export interface MessageProps {
   title: string;
   isMessageShown?: boolean;
   onClickLater?: () => void;
