@@ -11,5 +11,5 @@ export const avatarTouchMessage = (avatarTouchCount: number) => {
   if (avatarTouchCount < 10) {
     return "🙏 I'm begging you now...";
   }
-  return "🏆 You win! I'll give you my project link now!";
+  return '🏆 You win! You should make your own profile too';
 };
