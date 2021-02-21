@@ -5,7 +5,8 @@ export const useIsMobile = (): [boolean, Dispatch<SetStateAction<boolean>>] => {
   const [value, setValue] = useState<boolean>(false);
 
   useEffect(
-    () => setValue(isMobile(window.navigator).any), //
+    // Only iOS for now
+    () => setValue(isMobile(window.navigator).apple.device), //
     [],
   );
 

@@ -108,6 +108,7 @@ const Button = styled.button<ButtonProps>`
   padding: 8px 10px;
   flex: 1;
   border-radius: 36px;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
 

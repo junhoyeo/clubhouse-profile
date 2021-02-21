@@ -9,6 +9,8 @@ import Message, { MessageProps } from '../components/Message';
 import ServiceWrapper from '../components/ServiceWrapper';
 import { avatarTouchMessage } from '../utils/avatarTouchMessage';
 import { openURL } from '../utils/openURL';
+import { useIsMobile } from '../utils/useIsMobile';
+import { copyToClipboard } from '../utils/copyToClipboard';
 
 interface Social {
   name: string;
@@ -17,6 +19,7 @@ interface Social {
 }
 
 const Home = () => {
+  const [isMobile] = useIsMobile();
   const [isMessageShown, setMessageShown] = useState<boolean>(false);
   const [message, setMessage] = useState<MessageProps>({
     title: '',
@@ -86,6 +89,46 @@ const Home = () => {
       key: 'twitter',
     });
 
+  const onClickAppButton = () => {
+    setMessageShown(false);
+    if (!isMobile) {
+      setTimeout(() => {
+        setMessage({
+          title: '🥲 This only works in iOS devices for now!',
+          error: true,
+        });
+        setMessageShown(true);
+        setTimeout(() => setMessageShown(false), 2500);
+      }, 100);
+      return;
+    }
+
+    const script = document.createElement('script');
+
+    script.onload = () => {
+      copyToClipboard(profile.username);
+      setMessage({
+        title: '✅ Copied my username to your clipboard!',
+      });
+      setMessageShown(true);
+      setInterval(() => {
+        document.location.href = 'clubhouse://';
+      }, 500);
+    };
+    script.onerror = () => {
+      setMessageShown(false);
+      setMessage({
+        title: '😰 Failed to open Clubhouse app',
+        error: true,
+      });
+      setMessageShown(true);
+      setTimeout(() => setMessageShown(false), 2500);
+    };
+    script.setAttribute('src', 'clubhouse://');
+
+    document.getElementsByTagName('head')[0].appendChild(script);
+  };
+
   return (
     <ServiceWrapper>
       <Wrapper>
@@ -127,7 +170,11 @@ const Home = () => {
             </NorminationText>
           </NorminationInformation>
         </NorminationContainer>
-        <OpenAppButton title="Open app to follow me" />
+        <OpenAppButton
+          isMobile={isMobile}
+          title="Open app to follow me"
+          onClick={onClickAppButton}
+        />
       </Wrapper>
       <Message isMessageShown={isMessageShown} {...message} />
     </ServiceWrapper>
