@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import profile from '../data/profile.json';
 
+import AppButton from '../components/AppButton';
 import Message, { MessageProps } from '../components/Message';
 import ServiceWrapper from '../components/ServiceWrapper';
 import { avatarTouchMessage } from '../utils/avatarTouchMessage';
@@ -126,6 +127,7 @@ const Home = () => {
             </NorminationText>
           </NorminationInformation>
         </NorminationContainer>
+        <OpenAppButton title="Open app to follow me" />
       </Wrapper>
       <Message isMessageShown={isMessageShown} {...message} />
     </ServiceWrapper>
@@ -249,4 +251,9 @@ const NorminationText = styled(JoinedAt)`
 
 const Norminator = styled.strong`
   font-weight: 600;
+`;
+
+const OpenAppButton = styled(AppButton)`
+  margin-top: 32px;
+  margin-bottom: 52px;
 `;
