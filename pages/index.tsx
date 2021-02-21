@@ -42,37 +42,35 @@ const Home = () => {
   }, []);
 
   const onClickAvatar = () => {
-    if (isMessageShown) {
-      return;
-    }
     setMessageShown(false);
-    setMessage({
-      title: avatarTouchMessage(avatarTouchCount),
-      error: true,
-    });
-    setAvatarTouchCount(avatarTouchCount + 1);
-    setMessageShown(true);
     setTimeout(() => {
-      if (avatarTouchCount >= 10) {
-        openURL('https://github.com/junhoyeo/clubhouse-profile');
-      }
-      setMessageShown(false);
-    }, 2500);
+      setMessage({
+        title: avatarTouchMessage(avatarTouchCount),
+        error: true,
+      });
+      setAvatarTouchCount(avatarTouchCount + 1);
+      setMessageShown(true);
+      setTimeout(() => {
+        if (avatarTouchCount >= 10) {
+          openURL('https://github.com/junhoyeo/clubhouse-profile');
+        }
+        setMessageShown(false);
+      }, 2500);
+    }, 100);
   };
 
   const onClickSocial = ({ name, url, key }: Social) => {
-    if (isMessageShown) {
-      return;
-    }
     setMessageShown(false);
-    setMessage({
-      title: `👋 Thanks for clicking my ${name}!`,
-    });
-    setMessageShown(true);
     setTimeout(() => {
-      openURL(`${url}/${profile[key]}`);
-      setMessageShown(false);
-    }, 2500);
+      setMessage({
+        title: `👋 Thanks for clicking my ${name}!`,
+      });
+      setMessageShown(true);
+      setTimeout(() => {
+        openURL(`${url}/${profile[key]}`);
+        setMessageShown(false);
+      }, 2500);
+    }, 100);
   };
 
   const onClickInstagram = () =>
