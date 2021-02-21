@@ -42,6 +42,9 @@ const Home = () => {
   }, []);
 
   const onClickAvatar = () => {
+    if (isMessageShown) {
+      return;
+    }
     setMessageShown(false);
     setTimeout(() => {
       setMessage({
