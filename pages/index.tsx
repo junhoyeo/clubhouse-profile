@@ -30,15 +30,17 @@ const Home = () => {
     .format('MMM DD, yyyy');
 
   useEffect(() => {
-    setMessage({
-      title: '👋 Junho Yeo invited you to view his GitHub profile',
-      onClickLater: () => setMessageShown(false),
-      onClickOkay: () => {
-        openURL('https://github.com/junhoyeo');
-        setMessageShown(false);
-      },
-    });
-    setMessageShown(true);
+    setTimeout(() => {
+      setMessage({
+        title: '👋 Junho Yeo invited you to view his GitHub profile',
+        onClickLater: () => setMessageShown(false),
+        onClickOkay: () => {
+          openURL('https://github.com/junhoyeo');
+          setMessageShown(false);
+        },
+      });
+      setMessageShown(true);
+    }, 500);
   }, []);
 
   const onClickAvatar = () => {
