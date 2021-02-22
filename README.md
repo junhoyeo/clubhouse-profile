@@ -5,7 +5,7 @@ This repository uses [React](https://github.com/facebook/react) & [Next.js](http
 
 <div align="center">
   <a href="https://clubhouse.junho.io">
-    <img src="./docs/images/preview.webp" width="412px">
+    <img src="./docs/images/preview.webp" width="528px">
   </a>
   <blockquote>👋 Your <a href="https://www.joinclubhouse.com/">Clubhouse</a> profile, <strong>on the web</strong></blockquote>
 </div>
