@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ReactGA from 'react-ga';
 import moment from 'moment';
 import styled from 'styled-components';
 
@@ -30,6 +31,9 @@ const Home = () => {
     .format('MMM DD, yyyy');
 
   useEffect(() => {
+    ReactGA.initialize('G-3JHG3XBMTX');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
     setTimeout(() => {
       setMessage({
         title: '👋 Junho Yeo invited you to view his GitHub profile',
