@@ -31,8 +31,11 @@ const Home = () => {
     .format('MMM DD, yyyy');
 
   useEffect(() => {
-    ReactGA.initialize('G-3JHG3XBMTX');
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    if (window !== undefined) {
+      ReactGA.initialize('UA-143434538-3');
+      ReactGA.pageview(window.location.pathname + window.location.search);
+      return;
+    }
 
     setTimeout(() => {
       setMessage({
