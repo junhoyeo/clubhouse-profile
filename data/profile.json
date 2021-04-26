@@ -128,59 +128,14 @@
       "abbreviated_title": "Writing"
     },
     {
-      "title": "🎏 Design",
-      "id": 56,
-      "abbreviated_title": "Design"
-    },
-    {
-      "title": "🍣 Food & Drink",
-      "id": 58,
-      "abbreviated_title": "Food & Drink"
-    },
-    {
       "title": "📚 Books",
       "id": 59,
       "abbreviated_title": "Books"
     },
     {
-      "title": "⛳️ Golf",
-      "id": 72,
-      "abbreviated_title": "Golf"
-    },
-    {
       "title": "🎧 Music",
       "id": 74,
       "abbreviated_title": "Music"
-    },
-    {
-      "title": "🎞 Movies",
-      "id": 75,
-      "abbreviated_title": "Movies"
-    },
-    {
-      "title": "📻 Podcasts",
-      "id": 78,
-      "abbreviated_title": "Podcasts"
-    },
-    {
-      "title": "🕹 Gaming",
-      "id": 79,
-      "abbreviated_title": "Gaming"
-    },
-    {
-      "title": "⏳ The Future",
-      "id": 140,
-      "abbreviated_title": "The Future"
-    },
-    {
-      "title": "🌱 Networking",
-      "id": 147,
-      "abbreviated_title": "Networking"
-    },
-    {
-      "title": "🎯 Pitch Practice",
-      "id": 148,
-      "abbreviated_title": "Pitch Practice"
     },
     {
       "title": "📎 Small Business",
@@ -193,14 +148,94 @@
       "abbreviated_title": "Psychedelics"
     },
     {
+      "title": "🎏 Design",
+      "id": 56,
+      "abbreviated_title": "Design"
+    },
+    {
       "title": "🍃 Mindfulness",
       "id": 18,
       "abbreviated_title": "Mindfulness"
     },
     {
+      "title": "🍣 Food & Drink",
+      "id": 58,
+      "abbreviated_title": "Food & Drink"
+    },
+    {
+      "title": "🕹 Gaming",
+      "id": 79,
+      "abbreviated_title": "Gaming"
+    },
+    {
+      "title": "⏳ The Future",
+      "id": 140,
+      "abbreviated_title": "The Future"
+    },
+    {
+      "title": "🏛 Stocks",
+      "id": 145,
+      "abbreviated_title": "Stocks"
+    },
+    {
+      "title": "🌙 Late Night",
+      "id": 151,
+      "abbreviated_title": "Late Night"
+    },
+    {
+      "title": "✨ Meet People",
+      "id": 153,
+      "abbreviated_title": "Meet People"
+    },
+    {
+      "title": "🦙 ¯\\_(ツ)_/¯",
+      "id": 157,
+      "abbreviated_title": "¯\\_(ツ)_/¯"
+    },
+    {
       "title": "🧘🏻‍♀️ Meditation",
       "id": 19,
       "abbreviated_title": "Meditation"
+    },
+    {
+      "title": "🗽 New York",
+      "id": 91,
+      "abbreviated_title": "New York"
+    },
+    {
+      "title": "🏹 Entrepreneurship",
+      "id": 144,
+      "abbreviated_title": "Entrepreneurship"
+    },
+    {
+      "title": "🧊 Chill Vibes",
+      "id": 156,
+      "abbreviated_title": "Chill Vibes"
+    },
+    {
+      "title": "⛳️ Golf",
+      "id": 72,
+      "abbreviated_title": "Golf"
+    },
+    {
+      "title": "🎞 Movies",
+      "id": 75,
+      "abbreviated_title": "Movies"
+    },
+    {
+      "title": "📻 Podcasts",
+      "id": 78,
+      "abbreviated_title": "Podcasts"
+    },
+    {
+      "title": "🌱 Networking",
+      "id": 147,
+      "abbreviated_title": "Networking"
+    },
+    {
+      "title": "🎯 Pitch Practice",
+      "id": 148,
+      "abbreviated_title": "Pitch Practice"
     },
     {
       "title": "💸 Grownuping",
@@ -238,11 +273,6 @@
       "abbreviated_title": "San Francisco"
     },
     {
-      "title": "🗽 New York",
-      "id": 91,
-      "abbreviated_title": "New York"
-    },
-    {
       "title": "🇫🇷 Paris",
       "id": 93,
       "abbreviated_title": "Paris"
@@ -263,39 +293,9 @@
       "abbreviated_title": "Millennials"
     },
     {
-      "title": "🏹 Entrepreneurship",
-      "id": 144,
-      "abbreviated_title": "Entrepreneurship"
-    },
-    {
-      "title": "🏛 Stocks",
-      "id": 145,
-      "abbreviated_title": "Stocks"
-    },
-    {
-      "title": "🌙 Late Night",
-      "id": 151,
-      "abbreviated_title": "Late Night"
-    },
-    {
-      "title": "✨ Meet People",
-      "id": 153,
-      "abbreviated_title": "Meet People"
-    },
-    {
       "title": "👩🏽‍💻 Coworking",
       "id": 154,
       "abbreviated_title": "Coworking"
-    },
-    {
-      "title": "🧊 Chill Vibes",
-      "id": 156,
-      "abbreviated_title": "Chill Vibes"
-    },
-    {
-      "title": "🦙 ¯\\_(ツ)_/¯",
-      "id": 157,
-      "abbreviated_title": "¯\\_(ツ)_/¯"
     }
   ]
 }
