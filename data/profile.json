@@ -7,7 +7,7 @@
   "bio": "⛳️ Software Engineer at @PocketLesson\n🌸 Creating INEVITABLE™ Services\n🐙 GitHub@junhoyeo\n\n🏴‍☠️ Have a lot of interest in interesting hacks and projects with funny ideas\n\n🙋🏻‍♂️ Someone who can start something right away, when they have an inspiration\n\n🙌 I speak 🇰🇷🇺🇸, like to 🏃🏙 while 🎧🎼\n👻 Dropout of Korea Digital Media High",
   "twitter": null,
   "instagram": "_junhoyeo",
-  "num_followers": 180,
+  "num_followers": 181,
   "num_following": 131,
   "time_created": "2021-01-28T12:30:25.625451+00:00",
   "follows_me": false,
@@ -28,11 +28,142 @@
   "can_receive_direct_payment": false,
   "direct_payment_fee_rate": 0.029,
   "direct_payment_fee_fixed": 0.3,
+  "bio_links": [],
   "has_verified_email": true,
   "can_edit_username": true,
   "can_edit_name": true,
   "can_edit_displayname": true,
   "topics": [
+    {
+      "title": "🍓 Psychedelics",
+      "id": 17,
+      "abbreviated_title": "Psychedelics"
+    },
+    {
+      "title": "🍃 Mindfulness",
+      "id": 18,
+      "abbreviated_title": "Mindfulness"
+    },
+    {
+      "title": "🧘🏻‍♀️ Meditation",
+      "id": 19,
+      "abbreviated_title": "Meditation"
+    },
+    {
+      "title": "💸 Grownuping",
+      "id": 30,
+      "abbreviated_title": "Grownuping"
+    },
+    {
+      "title": "✈️ Traveling",
+      "id": 31,
+      "abbreviated_title": "Traveling"
+    },
+    {
+      "title": "🇺🇸 U.S. Politics",
+      "id": 43,
+      "abbreviated_title": "U.S. Politics"
+    },
+    {
+      "title": "👥 Social Issues",
+      "id": 48,
+      "abbreviated_title": "Social Issues"
+    },
+    {
+      "title": "📰 Current Events",
+      "id": 49,
+      "abbreviated_title": "Current Events"
+    },
+    {
+      "title": "📐 Architecture",
+      "id": 50,
+      "abbreviated_title": "Architecture"
+    },
+    {
+      "title": "📖 Writing",
+      "id": 53,
+      "abbreviated_title": "Writing"
+    },
+    {
+      "title": "🎏 Design",
+      "id": 56,
+      "abbreviated_title": "Design"
+    },
+    {
+      "title": "🍣 Food & Drink",
+      "id": 58,
+      "abbreviated_title": "Food & Drink"
+    },
+    {
+      "title": "📚 Books",
+      "id": 59,
+      "abbreviated_title": "Books"
+    },
+    {
+      "title": "⛳️ Golf",
+      "id": 72,
+      "abbreviated_title": "Golf"
+    },
+    {
+      "title": "🎧 Music",
+      "id": 74,
+      "abbreviated_title": "Music"
+    },
+    {
+      "title": "🎞 Movies",
+      "id": 75,
+      "abbreviated_title": "Movies"
+    },
+    {
+      "title": "🙊 Comedy",
+      "id": 76,
+      "abbreviated_title": "Comedy"
+    },
+    {
+      "title": "📻 Podcasts",
+      "id": 78,
+      "abbreviated_title": "Podcasts"
+    },
+    {
+      "title": "🕹 Gaming",
+      "id": 79,
+      "abbreviated_title": "Gaming"
+    },
+    {
+      "title": "☕️ Advice",
+      "id": 82,
+      "abbreviated_title": "Advice"
+    },
+    {
+      "title": "🎙 Storytelling",
+      "id": 87,
+      "abbreviated_title": "Storytelling"
+    },
+    {
+      "title": "💥 Fun",
+      "id": 88,
+      "abbreviated_title": "Fun"
+    },
+    {
+      "title": "🌁 San Francisco",
+      "id": 90,
+      "abbreviated_title": "San Francisco"
+    },
+    {
+      "title": "🗽 New York",
+      "id": 91,
+      "abbreviated_title": "New York"
+    },
+    {
+      "title": "🇫🇷 Paris",
+      "id": 93,
+      "abbreviated_title": "Paris"
+    },
+    {
+      "title": "🌅 Los Angeles",
+      "id": 94,
+      "abbreviated_title": "Los Angeles"
+    },
     {
       "title": "🦄 Startups",
       "id": 107,
@@ -89,6 +220,16 @@
       "abbreviated_title": "AI"
     },
     {
+      "title": "😴 Gen Z",
+      "id": 126,
+      "abbreviated_title": "Gen Z"
+    },
+    {
+      "title": "👻 Millennials",
+      "id": 127,
+      "abbreviated_title": "Millennials"
+    },
+    {
       "title": "🔬 Science",
       "id": 131,
       "abbreviated_title": "Science"
@@ -104,104 +245,9 @@
       "abbreviated_title": "Biology"
     },
     {
-      "title": "🇺🇸 U.S. Politics",
-      "id": 43,
-      "abbreviated_title": "U.S. Politics"
-    },
-    {
-      "title": "👥 Social Issues",
-      "id": 48,
-      "abbreviated_title": "Social Issues"
-    },
-    {
-      "title": "📰 Current Events",
-      "id": 49,
-      "abbreviated_title": "Current Events"
-    },
-    {
-      "title": "📐 Architecture",
-      "id": 50,
-      "abbreviated_title": "Architecture"
-    },
-    {
-      "title": "📖 Writing",
-      "id": 53,
-      "abbreviated_title": "Writing"
-    },
-    {
-      "title": "📚 Books",
-      "id": 59,
-      "abbreviated_title": "Books"
-    },
-    {
-      "title": "🎧 Music",
-      "id": 74,
-      "abbreviated_title": "Music"
-    },
-    {
-      "title": "📎 Small Business",
-      "id": 149,
-      "abbreviated_title": "Small Business"
-    },
-    {
-      "title": "🍓 Psychedelics",
-      "id": 17,
-      "abbreviated_title": "Psychedelics"
-    },
-    {
-      "title": "🎏 Design",
-      "id": 56,
-      "abbreviated_title": "Design"
-    },
-    {
-      "title": "🍃 Mindfulness",
-      "id": 18,
-      "abbreviated_title": "Mindfulness"
-    },
-    {
-      "title": "🍣 Food & Drink",
-      "id": 58,
-      "abbreviated_title": "Food & Drink"
-    },
-    {
-      "title": "🕹 Gaming",
-      "id": 79,
-      "abbreviated_title": "Gaming"
-    },
-    {
       "title": "⏳ The Future",
       "id": 140,
       "abbreviated_title": "The Future"
-    },
-    {
-      "title": "🏛 Stocks",
-      "id": 145,
-      "abbreviated_title": "Stocks"
-    },
-    {
-      "title": "🌙 Late Night",
-      "id": 151,
-      "abbreviated_title": "Late Night"
-    },
-    {
-      "title": "✨ Meet People",
-      "id": 153,
-      "abbreviated_title": "Meet People"
-    },
-    {
-      "title": "🦙 ¯\\_(ツ)_/¯",
-      "id": 157,
-      "abbreviated_title": "¯\\_(ツ)_/¯"
-    },
-    {
-      "title": "🧘🏻‍♀️ Meditation",
-      "id": 19,
-      "abbreviated_title": "Meditation"
-    },
-    {
-      "title": "🗽 New York",
-      "id": 91,
-      "abbreviated_title": "New York"
     },
     {
       "title": "🏹 Entrepreneurship",
@@ -209,24 +255,9 @@
       "abbreviated_title": "Entrepreneurship"
     },
     {
-      "title": "🧊 Chill Vibes",
-      "id": 156,
-      "abbreviated_title": "Chill Vibes"
-    },
-    {
-      "title": "⛳️ Golf",
-      "id": 72,
-      "abbreviated_title": "Golf"
-    },
-    {
-      "title": "🎞 Movies",
-      "id": 75,
-      "abbreviated_title": "Movies"
-    },
-    {
-      "title": "📻 Podcasts",
-      "id": 78,
-      "abbreviated_title": "Podcasts"
+      "title": "🏛 Stocks",
+      "id": 145,
+      "abbreviated_title": "Stocks"
     },
     {
       "title": "🌱 Networking",
@@ -239,64 +270,34 @@
       "abbreviated_title": "Pitch Practice"
     },
     {
-      "title": "💸 Grownuping",
-      "id": 30,
-      "abbreviated_title": "Grownuping"
+      "title": "📎 Small Business",
+      "id": 149,
+      "abbreviated_title": "Small Business"
     },
     {
-      "title": "✈️ Traveling",
-      "id": 31,
-      "abbreviated_title": "Traveling"
+      "title": "🌙 Late Night",
+      "id": 151,
+      "abbreviated_title": "Late Night"
     },
     {
-      "title": "🙊 Comedy",
-      "id": 76,
-      "abbreviated_title": "Comedy"
-    },
-    {
-      "title": "☕️ Advice",
-      "id": 82,
-      "abbreviated_title": "Advice"
-    },
-    {
-      "title": "🎙 Storytelling",
-      "id": 87,
-      "abbreviated_title": "Storytelling"
-    },
-    {
-      "title": "💥 Fun",
-      "id": 88,
-      "abbreviated_title": "Fun"
-    },
-    {
-      "title": "🌁 San Francisco",
-      "id": 90,
-      "abbreviated_title": "San Francisco"
-    },
-    {
-      "title": "🇫🇷 Paris",
-      "id": 93,
-      "abbreviated_title": "Paris"
-    },
-    {
-      "title": "🌅 Los Angeles",
-      "id": 94,
-      "abbreviated_title": "Los Angeles"
-    },
-    {
-      "title": "😴 Gen Z",
-      "id": 126,
-      "abbreviated_title": "Gen Z"
-    },
-    {
-      "title": "👻 Millennials",
-      "id": 127,
-      "abbreviated_title": "Millennials"
+      "title": "✨ Meet People",
+      "id": 153,
+      "abbreviated_title": "Meet People"
     },
     {
       "title": "👩🏽‍💻 Coworking",
       "id": 154,
       "abbreviated_title": "Coworking"
+    },
+    {
+      "title": "🧊 Chill Vibes",
+      "id": 156,
+      "abbreviated_title": "Chill Vibes"
+    },
+    {
+      "title": "🦙 ¯\\_(ツ)_/¯",
+      "id": 157,
+      "abbreviated_title": "¯\\_(ツ)_/¯"
     }
   ]
 }
