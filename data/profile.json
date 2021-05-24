@@ -2,7 +2,7 @@
   "user_id": 4075733,
   "name": "Junho Yeo",
   "displayname": null,
-  "photo_url": "https://clubhouseprod.s3.amazonaws.com:443/4075733_784b660f-db6d-4838-aadb-f64847bdf9dd",
+  "photo_url": "https://production-clubhouse-avatars.s3.amazonaws.com:443/4075733_93e3e972-26ea-4a91-bba3-814037e1524f",
   "username": "junhoyeo",
   "bio": "⛳️ Software Engineer at @PocketLesson\n🌸 Creating INEVITABLE™ Services\n🐙 GitHub@junhoyeo\n\n🏴‍☠️ Have a lot of interest in interesting hacks and projects with funny ideas\n\n🙋🏻‍♂️ Someone who can start something right away, when they have an inspiration\n\n🙌 I speak 🇰🇷🇺🇸, like to 🏃🏙 while 🎧🎼\n👻 Dropout of Korea Digital Media High",
   "twitter": null,
@@ -19,7 +19,7 @@
   "invited_by_user_profile": {
     "user_id": 4061302,
     "name": "Sunghyun Cho",
-    "photo_url": "https://clubhouseprod.s3.amazonaws.com:443/4061302_abbc421e-379c-4059-9656-7b6c18dc3752_thumbnail_250x250",
+    "photo_url": "https://production-clubhouse-avatars.s3.amazonaws.com:443/4061302_abbc421e-379c-4059-9656-7b6c18dc3752_thumbnail_250x250",
     "username": "anaclumos"
   },
   "invited_by_club": null,
@@ -35,169 +35,169 @@
   "can_edit_displayname": true,
   "topics": [
     {
-      "title": "🍓 Psychedelics",
+      "title": "🍓 몽환적 분위기",
       "id": 17,
-      "abbreviated_title": "Psychedelics"
+      "abbreviated_title": "몽환적 분위기"
     },
     {
-      "title": "🍃 Mindfulness",
+      "title": "🍃 마음",
       "id": 18,
-      "abbreviated_title": "Mindfulness"
+      "abbreviated_title": "마음"
     },
     {
-      "title": "🧘🏻‍♀️ Meditation",
+      "title": "🧘🏻‍♀️ 명상",
       "id": 19,
-      "abbreviated_title": "Meditation"
+      "abbreviated_title": "명상"
     },
     {
-      "title": "💸 Grownuping",
+      "title": "💸 어른되기",
       "id": 30,
-      "abbreviated_title": "Grownuping"
+      "abbreviated_title": "어른되기"
     },
     {
-      "title": "✈️ Traveling",
+      "title": "✈️ 여행",
       "id": 31,
-      "abbreviated_title": "Traveling"
+      "abbreviated_title": "여행"
     },
     {
-      "title": "🇺🇸 U.S. Politics",
+      "title": "🇺🇸 미국 정치",
       "id": 43,
-      "abbreviated_title": "U.S. Politics"
+      "abbreviated_title": "미국 정치"
     },
     {
-      "title": "👥 Social Issues",
+      "title": "👥 사회 이슈",
       "id": 48,
-      "abbreviated_title": "Social Issues"
+      "abbreviated_title": "사회 이슈"
     },
     {
-      "title": "📰 Current Events",
+      "title": "📰 시사",
       "id": 49,
-      "abbreviated_title": "Current Events"
+      "abbreviated_title": "시사"
     },
     {
-      "title": "📐 Architecture",
+      "title": "📐 건축",
       "id": 50,
-      "abbreviated_title": "Architecture"
+      "abbreviated_title": "건축"
     },
     {
-      "title": "📖 Writing",
+      "title": "📖 작문",
       "id": 53,
-      "abbreviated_title": "Writing"
+      "abbreviated_title": "작문"
     },
     {
-      "title": "🎏 Design",
+      "title": "🎏 디자인",
       "id": 56,
-      "abbreviated_title": "Design"
+      "abbreviated_title": "디자인"
     },
     {
-      "title": "🍣 Food & Drink",
+      "title": "🍣 음식",
       "id": 58,
-      "abbreviated_title": "Food & Drink"
+      "abbreviated_title": "음식"
     },
     {
-      "title": "📚 Books",
+      "title": "📚 책",
       "id": 59,
-      "abbreviated_title": "Books"
+      "abbreviated_title": "책"
     },
     {
-      "title": "⛳️ Golf",
+      "title": "⛳️ 골프",
       "id": 72,
-      "abbreviated_title": "Golf"
+      "abbreviated_title": "골프"
     },
     {
-      "title": "🎧 Music",
+      "title": "🎧 음악",
       "id": 74,
-      "abbreviated_title": "Music"
+      "abbreviated_title": "음악"
     },
     {
-      "title": "🎞 Movies",
+      "title": "🎞 영화",
       "id": 75,
-      "abbreviated_title": "Movies"
+      "abbreviated_title": "영화"
     },
     {
-      "title": "🙊 Comedy",
+      "title": "🙊 코메디",
       "id": 76,
-      "abbreviated_title": "Comedy"
+      "abbreviated_title": "코메디"
     },
     {
-      "title": "📻 Podcasts",
+      "title": "📻 팟캐스트",
       "id": 78,
-      "abbreviated_title": "Podcasts"
+      "abbreviated_title": "팟캐스트"
     },
     {
-      "title": "🕹 Gaming",
+      "title": "🕹 게임",
       "id": 79,
-      "abbreviated_title": "Gaming"
+      "abbreviated_title": "게임"
     },
     {
-      "title": "☕️ Advice",
+      "title": "☕️ 조언",
       "id": 82,
-      "abbreviated_title": "Advice"
+      "abbreviated_title": "조언"
     },
     {
-      "title": "🎙 Storytelling",
+      "title": "🎙 이야기",
       "id": 87,
-      "abbreviated_title": "Storytelling"
+      "abbreviated_title": "이야기"
     },
     {
-      "title": "💥 Fun",
+      "title": "💥 오락",
       "id": 88,
-      "abbreviated_title": "Fun"
+      "abbreviated_title": "오락"
     },
     {
-      "title": "🌁 San Francisco",
+      "title": "🌁 샌프란시스코",
       "id": 90,
-      "abbreviated_title": "San Francisco"
+      "abbreviated_title": "샌프란시스코"
     },
     {
-      "title": "🗽 New York",
+      "title": "🗽 뉴욕",
       "id": 91,
-      "abbreviated_title": "New York"
+      "abbreviated_title": "뉴욕"
     },
     {
-      "title": "🇫🇷 Paris",
+      "title": "🇫🇷 파리",
       "id": 93,
-      "abbreviated_title": "Paris"
+      "abbreviated_title": "파리"
     },
     {
-      "title": "🌅 Los Angeles",
+      "title": "🌅 로스앤젤레스",
       "id": 94,
-      "abbreviated_title": "Los Angeles"
+      "abbreviated_title": "로스앤젤레스"
     },
     {
-      "title": "🦄 Startups",
+      "title": "🦄 스타트업",
       "id": 107,
-      "abbreviated_title": "Startups"
+      "abbreviated_title": "스타트업"
     },
     {
-      "title": "💰 Venture Capital",
+      "title": "💰 창업",
       "id": 108,
-      "abbreviated_title": "Venture Capital"
+      "abbreviated_title": "창업"
     },
     {
-      "title": "💵 Angel Investing",
+      "title": "💵 엔젤 투자",
       "id": 109,
-      "abbreviated_title": "Angel Investing"
+      "abbreviated_title": "엔젤 투자"
     },
     {
-      "title": "📱 Product",
+      "title": "📱 제품",
       "id": 110,
-      "abbreviated_title": "Product"
+      "abbreviated_title": "제품"
     },
     {
-      "title": "🍕 Engineering",
+      "title": "🍕 공학",
       "id": 111,
-      "abbreviated_title": "Engineering"
+      "abbreviated_title": "공학"
     },
     {
-      "title": "📈 Marketing",
+      "title": "📈 마케팅",
       "id": 112,
-      "abbreviated_title": "Marketing"
+      "abbreviated_title": "마케팅"
     },
     {
-      "title": "🛍 DTC",
+      "title": "🛍 D2C",
       "id": 113,
-      "abbreviated_title": "DTC"
+      "abbreviated_title": "D2C"
     },
     {
       "title": "🥽 VR/AR",
@@ -205,9 +205,9 @@
       "abbreviated_title": "VR/AR"
     },
     {
-      "title": "🐇 Crypto",
+      "title": "🐇 가상화폐",
       "id": 115,
-      "abbreviated_title": "Crypto"
+      "abbreviated_title": "가상화폐"
     },
     {
       "title": "☁️ SaaS",
@@ -215,84 +215,84 @@
       "abbreviated_title": "SaaS"
     },
     {
-      "title": "🧠 AI",
+      "title": "🧠 인공지능",
       "id": 117,
-      "abbreviated_title": "AI"
+      "abbreviated_title": "인공지능"
     },
     {
-      "title": "😴 Gen Z",
+      "title": "😴 Z 세대",
       "id": 126,
-      "abbreviated_title": "Gen Z"
+      "abbreviated_title": "Z 세대"
     },
     {
-      "title": "👻 Millennials",
+      "title": "👻 밀레니엄 세대",
       "id": 127,
-      "abbreviated_title": "Millennials"
+      "abbreviated_title": "밀레니엄 세대"
     },
     {
-      "title": "🔬 Science",
+      "title": "🔬 과학",
       "id": 131,
-      "abbreviated_title": "Science"
+      "abbreviated_title": "과학"
     },
     {
-      "title": "🧲 Physics",
+      "title": "🧲 물리학",
       "id": 132,
-      "abbreviated_title": "Physics"
+      "abbreviated_title": "물리학"
     },
     {
-      "title": "🧬 Biology",
+      "title": "🧬 생물학",
       "id": 135,
-      "abbreviated_title": "Biology"
+      "abbreviated_title": "생물학"
     },
     {
-      "title": "⏳ The Future",
+      "title": "⏳ 미래",
       "id": 140,
-      "abbreviated_title": "The Future"
+      "abbreviated_title": "미래"
     },
     {
-      "title": "🏹 Entrepreneurship",
+      "title": "🏹 사업",
       "id": 144,
-      "abbreviated_title": "Entrepreneurship"
+      "abbreviated_title": "사업"
     },
     {
-      "title": "🏛 Stocks",
+      "title": "🏛 주식",
       "id": 145,
-      "abbreviated_title": "Stocks"
+      "abbreviated_title": "주식"
     },
     {
-      "title": "🌱 Networking",
+      "title": "🌱 인맥",
       "id": 147,
-      "abbreviated_title": "Networking"
+      "abbreviated_title": "인맥"
     },
     {
-      "title": "🎯 Pitch Practice",
+      "title": "🎯 피칭 연습",
       "id": 148,
-      "abbreviated_title": "Pitch Practice"
+      "abbreviated_title": "피칭 연습"
     },
     {
-      "title": "📎 Small Business",
+      "title": "📎 중소기업",
       "id": 149,
-      "abbreviated_title": "Small Business"
+      "abbreviated_title": "중소기업"
     },
     {
-      "title": "🌙 Late Night",
+      "title": "🌙 늦은 밤",
       "id": 151,
-      "abbreviated_title": "Late Night"
+      "abbreviated_title": "늦은 밤"
     },
     {
-      "title": "✨ Meet People",
+      "title": "✨ 만남",
       "id": 153,
-      "abbreviated_title": "Meet People"
+      "abbreviated_title": "만남"
     },
     {
-      "title": "👩🏽‍💻 Coworking",
+      "title": "👩🏽‍💻 코워킹",
       "id": 154,
-      "abbreviated_title": "Coworking"
+      "abbreviated_title": "코워킹"
     },
     {
-      "title": "🧊 Chill Vibes",
+      "title": "🧊 느긋한 느낌",
       "id": 156,
-      "abbreviated_title": "Chill Vibes"
+      "abbreviated_title": "느긋한 느낌"
     },
     {
       "title": "🦙 ¯\\_(ツ)_/¯",
